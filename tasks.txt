@@ -1,0 +1,1 @@
+1. Nav lingid võiks olla eraldi paged.
