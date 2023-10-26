@@ -1,3 +1,8 @@
+/* scroll type */
+html {
+    scroll-behavior: smooth;
+}
+
 /* default styles */
 body, h1, h2, p {
     margin: 0;
