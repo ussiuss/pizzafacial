@@ -1,15 +1,13 @@
-/* scroll type */
-html {
-    scroll-behavior: smooth;
-}
-
-/* default styles */
-body, h1, h2, p {
+/* Default styles */
+html, body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
 
-/* bändipilt taustale letsgo*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('images/band3.jpg');
     background-size: cover;
@@ -20,10 +18,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* päis suurelt */
-header {
-    text-align: center;
-    margin: 30px;
+h1, h2 {
+    text-shadow: 2px 2px 4px #000000;
 }
 
 h1 {
@@ -35,7 +31,13 @@ h2 {
     font-weight: normal;
 }
 
-/* nav menu*/
+/* Header styles */
+header {
+    text-align: center;
+    margin: 30px;
+}
+
+/* Navigation styles */
 nav {
     background-color: #1f1f1f;
     padding: 10px;
@@ -54,42 +56,7 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: #ffffff;
-}
-
-section {
-    padding: 50px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #1f1f1f;
-}
-
-/* linkidele hover effect */
-a:hover {
-    text-decoration: underline;
-}
-
-nav a {
     font-size: 18px;
-}
-
-section h2 {
-    font-size: 28px;
-}
-
-section p {
-    font-size: 16px;
-}
-
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #ff9900;
 }
 
 nav a:hover {
@@ -97,70 +64,61 @@ nav a:hover {
     transition: color 0.5s ease;
 }
 
+/* Section styles */
 section {
+    padding: 50px;
     background-color: #1f1f1f;
     border-radius: 5px;
     margin: 20px;
+    animation: fadeIn 1s ease;
 }
 
 section h2 {
+    font-size: 28px;
     color: #ff9900;
     margin-bottom: 10px;
 }
 
 section p {
+    font-size: 16px;
     line-height: 1.5;
 }
 
-/* box shadow on sections hover */
 section:hover {
     box-shadow: 0 0 10px rgba(255, 153, 0, 0.2);
     transition: box-shadow 0.5s ease;
 }
 
-/* portfolio picid */
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #ff9900;
+}
+
+/* Link styles */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio styles */
 section#portfolio img {
     max-width: 100%;
     height: auto;
 }
 
-footer {
-    font-size: 14px;
-}
-
-/* links custom */
-footer a {
-    font-size: 14px;
-}
-
-/* nav menu on smaller screens */
-@media (max-width: 768px) {
-    nav ul {
-        text-align: center;
-        padding: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 30px;
-    }
-}
-
-/* Fade in animation */
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-section {
-    animation: fadeIn 1s ease;
-}
-
-/* Scroll to top button */
+/* Scroll to top button styles */
 #myBtn {
     display: none;
     position: fixed;
@@ -179,4 +137,50 @@ section {
 
 #myBtn:hover {
     background-color: #555;
+}
+
+/* Merch images styles */
+#merch-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    width: 100%; /* Adjust this to change the width of the images container */
+    margin: 15px; 
+    margin-top: 30px;/* add some space around the images */
+}
+
+.merch-image {
+    width: 20%; /* Adjust this to change the width of each image */
+    margin: 15px; 
+    margin-top: 30px;/* add some space around the images */
+}
+
+.image-description {
+    color: white; 
+    text-align: center;
+    width: 100%;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
