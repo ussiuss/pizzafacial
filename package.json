@@ -1,0 +1,22 @@
+{
+  "name": "pizzafacial",
+  "version": "1.0.0",
+  "description": "node.js module",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ussiuss/pizzafacial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ussiuss/pizzafacial/issues"
+  },
+  "homepage": "https://github.com/ussiuss/pizzafacial#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
